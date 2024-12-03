@@ -1,13 +1,81 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #121212;
+  color: #ffffff;
+  line-height: 1.8;
+}
+.container {
+  position: relative;
+}
+.logo {
+  font-family: "Leckerli One", cursive;
+  font-size: 28px;
+}
+.container::before {
+  position: fixed;
+  top: 500px;
+  left: -100px;
+  bottom: 0;
+  content: "";
+  width: 400px;
+  height: 400px;
+  border: 2px solid rgba(255, 255, 255, 0.05);
+  z-index: 1;
+  transform: rotate(20deg);
+}
+.container::after {
+  position: fixed;
+  top: -150px;
+  right: -50px;
+  bottom: 0;
+  content: "";
+  width: 400px;
+  height: 550px;
+  border: 2px solid rgba(255, 255, 255, 0.05);
+  z-index: 1;
+  transform: rotate(-30deg);
+}
+.body {
+  position: relative;
+  z-index: 3;
+}
+.navlinks {
+  display: none;
+  list-style: none;
+}
+.navlinks.open {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #121212;
+  padding: 10px;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  padding-top: 50px;
+}
+.others {
+  position: relative;
+  color: #666666;
+  font-size: 16px;
+}
+.others::before {
+  content: " ";
+  position: absolute;
+  width: 15px;
+  bottom: -2px;
+  text-decoration: underline;
+  left: 0;
+  height: 1px;
+  border: 1px solid #666666;
+  color: #666666;
 }
