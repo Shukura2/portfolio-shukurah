@@ -40,7 +40,7 @@ const About = () => {
         </p>
         <Link
           className="text-[#2f89fc] text-lg"
-          to="https://docs.google.com/document/d/1LMldkmj528wj4ard4hkwWkt8YTvCCBYwlighmarY-fs/edit?tab=t.0"
+          to="https://docs.google.com/document/d/1icWeNSC2vBem3_xbeV8Y2ckS9RUQXgQ2clOWB2MtDvU/edit?usp=sharing"
         >
           Checkout my resume
         </Link>

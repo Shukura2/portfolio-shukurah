@@ -168,9 +168,12 @@ const Portfolio = () => {
             </p>
 
             <div className="flex gap-x-[20px] mt-5">
-              <p className="text-[#2f89fc] text-lg leading-relaxed pb-8">
+              <Link
+                to="https://shukurah-portfolio.netlify.app/"
+                className="text-[#2f89fc] text-lg leading-relaxed pb-8"
+              >
                 Demo
-              </p>
+              </Link>
               <Link
                 to="https://github.com/Shukura2/portfolio-shukurah"
                 className="text-[#2f89fc] text-lg leading-relaxed pb-8"
