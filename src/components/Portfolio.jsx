@@ -1,8 +1,6 @@
-import React from "react";
-// import AboutImg from "/images/about-img.jpg";
 import { motion } from "motion/react";
 import { Link } from "react-router";
-// /images/aboutimg.jpg
+
 const Portfolio = () => {
   return (
     <div id="projects">

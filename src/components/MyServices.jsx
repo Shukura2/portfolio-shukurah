@@ -42,7 +42,12 @@ const MyServices = () => {
               key={item.id}
               className="w-[70px] h-[70px] grayscale hover:grayscale-0 transition duration-300 ease-in-out border border-[#8c8c8c] flex justify-center items-center rounded-xl"
             >
-              <img src={item.logo} width={item.width} height={item.height} />
+              <img
+                src={item.logo}
+                alt=""
+                width={item.width}
+                height={item.height}
+              />
             </div>
           ))}
         </div>
