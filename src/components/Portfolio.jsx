@@ -1,7 +1,8 @@
 import React from "react";
-import AboutImg from "../about-img.jpg";
+// import AboutImg from "/images/about-img.jpg";
 import { motion } from "motion/react";
-
+import { Link } from "react-router";
+// /images/aboutimg.jpg
 const Portfolio = () => {
   return (
     <div id="projects">
@@ -23,7 +24,7 @@ const Portfolio = () => {
             transition={{ duration: "0.6" }}
             className="md:w-[30%] xl:w-[40%]"
           >
-            <img src={AboutImg} alt="" />
+            <img src="/images/agenda.png" alt="" />
           </motion.div>
           <motion.div
             initial={{ y: "100px" }}
@@ -31,23 +32,27 @@ const Portfolio = () => {
             transition={{ duration: "0.6" }}
             className="px-8 md:w-[60%] xl:w-[50%]"
           >
-            <h2 className="text-3xl leading-normal mb-7 font-medium">Title</h2>
+            <h2 className="text-3xl leading-normal mb-7 font-medium">Agenda</h2>
             <p className="text-[#8c8c8c] text-lg mb-5">
-              (desc) Even the all-powerful Pointing has no control about the
-              blind texts it is an almost unorthographic life One day however a
-              small line of blind text.
+              A fullstack application for managing events, users and feedback
             </p>
             <p className="text-[#8c8c8c] text-[13px] mb-2">
-              Stack used / Stack used / Stack used
+              NextJS / Express JS / PostgreSQL
             </p>
 
             <div className=" flex gap-x-[20px] mt-5">
-              <p className="text-[#2f89fc] text-lg leading-relaxed pb-8">
+              <Link
+                to="https://event-management-client-eta.vercel.app/"
+                className="text-[#2f89fc] text-lg leading-relaxed pb-8"
+              >
                 Demo
-              </p>
-              <p className="text-[#2f89fc] text-lg leading-relaxed pb-8">
+              </Link>
+              <Link
+                to="https://github.com/Shukura2/event-management-client"
+                className="text-[#2f89fc] text-lg leading-relaxed pb-8"
+              >
                 Code
-              </p>
+              </Link>
             </div>
           </motion.div>
         </div>
@@ -59,7 +64,7 @@ const Portfolio = () => {
             transition={{ duration: "0.8" }}
             className="md:w-[30%] xl:w-[40%]"
           >
-            <img src={AboutImg} alt="" />
+            <img src="/images/task-management.png" alt="" />
           </motion.div>
           <motion.div
             initial={{ y: "100px" }}
@@ -67,23 +72,30 @@ const Portfolio = () => {
             transition={{ duration: "0.8" }}
             className="px-8 md:w-[60%] xl:w-[50%]"
           >
-            <h2 className="text-3xl leading-normal mb-7 font-medium">Title</h2>
+            <h2 className="text-3xl leading-normal mb-7 font-medium">
+              Task Management App
+            </h2>
             <p className="text-[#8c8c8c] text-lg mb-5">
-              (desc) Even the all-powerful Pointing has no control about the
-              blind texts it is an almost unorthographic life One day however a
-              small line of blind text.
+              A simple task tracking application for organizing and managing
+              daily tasks with notification.
             </p>
             <p className="text-[#8c8c8c] text-[13px] mb-2">
-              Stack used / Stack used / Stack used
+              NextJS / Firebase / Tailwind CSS
             </p>
 
             <div className="flex gap-x-[20px] mt-5">
-              <p className="text-[#2f89fc] text-lg leading-relaxed pb-8">
+              <Link
+                to="https://task-management-app-47u8.vercel.app/"
+                className="text-[#2f89fc] text-lg leading-relaxed pb-8"
+              >
                 Demo
-              </p>
-              <p className="text-[#2f89fc] text-lg leading-relaxed pb-8">
+              </Link>
+              <Link
+                to="https://github.com/Shukura2/task-management-app"
+                className="text-[#2f89fc] text-lg leading-relaxed pb-8"
+              >
                 Code
-              </p>
+              </Link>
             </div>
           </motion.div>
         </div>
@@ -95,7 +107,7 @@ const Portfolio = () => {
             transition={{ duration: "0.10" }}
             className="md:w-[30%] xl:w-[40%]"
           >
-            <img src={AboutImg} alt="" />
+            <img src="/images/startup-landing-p.png" alt="" />
           </motion.div>
           <motion.div
             initial={{ y: "100px" }}
@@ -103,23 +115,30 @@ const Portfolio = () => {
             transition={{ duration: "0.10" }}
             className="px-8 md:w-[60%] xl:w-[50%]"
           >
-            <h2 className="text-3xl leading-normal mb-7 font-medium">Title</h2>
+            <h2 className="text-3xl leading-normal mb-7 font-medium">
+              StartUp Landing Page
+            </h2>
             <p className="text-[#8c8c8c] text-lg mb-5">
-              (desc) Even the all-powerful Pointing has no control about the
-              blind texts it is an almost unorthographic life One day however a
-              small line of blind text.
+              A responsive landing page designed to showcase products and
+              services and also drive user engagement.
             </p>
             <p className="text-[#8c8c8c] text-[13px] mb-2">
-              Stack used / Stack used / Stack used
+              ReactJS / Material UI
             </p>
 
             <div className="flex gap-x-[20px] mt-5">
-              <p className="text-[#2f89fc] text-lg leading-relaxed pb-8">
+              <Link
+                to="https://startup-landing-page-design.netlify.app/"
+                className="text-[#2f89fc] text-lg leading-relaxed pb-8"
+              >
                 Demo
-              </p>
-              <p className="text-[#2f89fc] text-lg leading-relaxed pb-8">
+              </Link>
+              <Link
+                to="https://github.com/Shukura2/startup-landing-page"
+                className="text-[#2f89fc] text-lg leading-relaxed pb-8"
+              >
                 Code
-              </p>
+              </Link>
             </div>
           </motion.div>
         </div>
@@ -131,7 +150,7 @@ const Portfolio = () => {
             transition={{ duration: "0.12" }}
             className="md:w-[30%] xl:w-[40%]"
           >
-            <img src={AboutImg} alt="" />
+            <img src="/images/Screenshot portfolio.png" alt="" />
           </motion.div>
           <motion.div
             initial={{ y: "100px" }}
@@ -139,23 +158,27 @@ const Portfolio = () => {
             transition={{ duration: "0.12" }}
             className="px-8 md:w-[60%] xl:w-[50%]"
           >
-            <h2 className="text-3xl leading-normal mb-7 font-medium">Title</h2>
+            <h2 className="text-3xl leading-normal mb-7 font-medium">
+              Portfolio Design
+            </h2>
             <p className="text-[#8c8c8c] text-lg mb-5">
-              (desc) Even the all-powerful Pointing has no control about the
-              blind texts it is an almost unorthographic life One day however a
-              small line of blind text.
+              A personal portfolio app to showcase projects, skills, and
+              experience in a clean, responsive layout.
             </p>
             <p className="text-[#8c8c8c] text-[13px] mb-2">
-              Stack used / Stack used / Stack used
+              ReactJS / Tailwind CSS / React Scroll
             </p>
 
             <div className="flex gap-x-[20px] mt-5">
               <p className="text-[#2f89fc] text-lg leading-relaxed pb-8">
                 Demo
               </p>
-              <p className="text-[#2f89fc] text-lg leading-relaxed pb-8">
+              <Link
+                to="https://github.com/Shukura2/portfolio-shukurah"
+                className="text-[#2f89fc] text-lg leading-relaxed pb-8"
+              >
                 Code
-              </p>
+              </Link>
             </div>
           </motion.div>
         </div>

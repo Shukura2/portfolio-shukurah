@@ -32,15 +32,19 @@ const About = () => {
         <p className="text-white mb-[70px] text-xl hidden xl:block">
           Hi! I'm Shukurah Nurudeen
         </p>
-        <p className="text-[#8c8c8c] xl:w-[80%] text-lg">
-          As a frontend developer, I aim to create seamless and user-centric web
-          experiences that bridge design and functionality. With a foundational
-          understanding of backend systems and databases, I strive to deliver
-          cohesive and efficient solutions that align with modern web standards
-          and user needs.
+        <p className="text-[#8c8c8c] xl:w-[80%] text-lg mb-5">
+          I am a fullstack developer who enjoys creating reliable and
+          user-friendly web applications. I work with tools like React, Node.js,
+          and PostgreSQL and I'm always exploring better ways to build and
+          learn.
         </p>
-        <p className="my-5 text-[#2f89fc] text-lg">Checkout my resume</p>
-        <div className="flex gap-x-3">
+        <Link
+          className="text-[#2f89fc] text-lg"
+          to="https://docs.google.com/document/d/1LMldkmj528wj4ard4hkwWkt8YTvCCBYwlighmarY-fs/edit?tab=t.0"
+        >
+          Checkout my resume
+        </Link>
+        <div className="flex gap-x-3 mt-5">
           <Link
             to="https://linkedin.com/in/shukurah-nurudeen-200b68197"
             className="bg-[#ffffff0d] w-14 h-14 rounded-full text-[#2f89fc] flex justify-center items-center"
